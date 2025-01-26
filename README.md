@@ -1,4 +1,4 @@
-# perturbqr
+# MasQRade
 
 How to use our project:
 
