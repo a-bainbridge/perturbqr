@@ -32,7 +32,7 @@ def addsincrement(adds):
 
 def permute(original,evfunc):
     tloc = original.find(".org")
-    target = original[:tloc]+".tec"+original[tloc+4:]
+    target = original[:tloc]+".tech/"+original[tloc+6:]
     i = 0
     j = 0
     best = 10**6
@@ -43,7 +43,7 @@ def permute(original,evfunc):
                 #new = target
                 good = True
                 for place in combo:
-                    if alphabet.count(target[place])==0 or place<3 or tloc < place and tloc+4 > place:
+                    if alphabet.count(target[place])==0 or place<6 or tloc < place and tloc+6 > place:
                         good = False
                 if good:
                     adds = [1]*len(combo)
