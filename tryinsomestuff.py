@@ -8,7 +8,7 @@
 
 import cv2
 print(cv2.__version__)
-img = cv2.imread('wiki.png')
+img = cv2.imread('wiki.PNG')
 
 qcd = cv2.QRCodeDetector()
 
